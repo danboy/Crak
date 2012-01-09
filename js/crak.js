@@ -15,9 +15,6 @@ Crak = function(callback,options){
     this.pixel = this.createPixel();
     this.counter = 0;
 
-    this.options = $.merge({
-      commonData: {}
-    }, options);
     Array.prototype.forEach.call(els, function(el, i, nodeList){
       //console.log(el, i, nodeList);
       this.getType(el);
